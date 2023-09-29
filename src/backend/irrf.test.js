@@ -17,6 +17,8 @@ describe('[Encontrar aliquota IRRF]', () => {
 
 
 describe('[Calcular desconto IRRF]', () => {
-   
-    
+   test('deve retornar 45.80', () => {
+    const result = irrf.calculardesconto(45.80);
+    expect(result).toEqual(45.80);
+   });
 });
